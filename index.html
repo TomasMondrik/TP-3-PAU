@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EVA - Seguridad Inteligente</title> 
+
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            
+            fondo: {
+              start: '#0f2027',
+              mid: '#203a43',
+              end: '#2c5364',
+            },
+            eva: "#FF5C00", 
+            botonLogin: "#00C896", 
+            botonRegister: "#D1D5DB" 
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-fondo-start via-fondo-mid to-fondo-end text-white">
+
+  <header class="flex justify-between items-center p-6">
+    <h1 class="text-eva text-2xl font-bold">EVA</h1>
+
+    <div class="flex gap-3">
+      <a href="login.html"
+         class="px-4 py-2 bg-botonLogin rounded-lg shadow hover:opacity-90 transition">
+        INICIAR SESIÓN
+      </a>
+
+      <a href="register.html"
+         class="px-4 py-2 bg-botonRegister text-black rounded-lg shadow hover:bg-gray-300 transition">
+        REGISTRARSE
+      </a>
+    </div>
+  </header>
+  </footer>
+</body>
+</html>
